@@ -1,0 +1,33 @@
+* { box-sizing: border-box; font-family: 'Arial', sans-serif; }
+body {
+  background: #f0f4f8; margin: 0; padding: 15px;
+}
+.container {
+  max-width: 800px; margin: 20px auto; background: white;
+  padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+h1 { color: #0d6efd; text-align: center; }
+.top-bar { display: flex; gap: 10px; margin-bottom: 15px; }
+select { flex: 1; padding: 10px; border-radius: 6px; border: 1px solid #ccc; }
+button {
+  background: #0d6efd; color: white; border: none; padding: 10px 15px;
+  border-radius: 6px; cursor: pointer; font-weight: bold;
+}
+#timer { text-align: center; font-size: 18px; color: red; font-weight: bold; margin-bottom: 15px; }
+.question {
+  background: #e8f0fe; padding: 15px; margin-bottom: 15px;
+  border-radius: 8px; border-left: 4px solid #0d6efd;
+}
+.question p { font-weight: bold; }
+.options label { display: block; margin: 8px 0; cursor: pointer; }
+.comprehension { background: #fff3cd; padding: 15px; border-radius: 8px; margin-bottom: 15px; }
+#resultCard {
+  background: #d4edda; padding: 20px; border-radius: 10px;
+  border: 2px solid #28a745; margin-top: 20px;
+}
+.btn-group { display: flex; gap: 10px; }
+.btn-group button { width: 50%; }
+.btn-group button:last-child { background: #17a2b8; }
+.hide { display: none; }
+.correct { color: green; font-weight: bold; }
+.wrong { color: red; font-weight: bold; }
