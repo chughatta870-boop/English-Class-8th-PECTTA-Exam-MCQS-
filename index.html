@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class 8 English PECTA 2026-27</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0d6efd">
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Class 8 English - PECTA 2026-27</h1>
+    <p>VIP MCQs + Comprehension | 10 Papers</p>
+
+    <div class="top-bar">
+      <select id="paperSelect" onchange="loadPaper()"></select>
+      <button onclick="submitPaper()">📤 Submit & Get Result</button>
+    </div>
+
+    <div id="timer">Time Left: <span>45:00</span></div>
+
+    <form id="quizForm"></form>
+
+    <div id="resultCard" class="hide">
+      <h2>🏆 Result Card</h2>
+      <p><b>Name:</b> <input type="text" id="studentName" placeholder="Enter Your Name"></p>
+      <div id="resultBox"></div>
+      <div class="btn-group">
+        <button onclick="downloadResult()">📥 Download Result</button>
+        <button onclick="shareResult()">📤 Share Result</button>
+      </div>
+    </div>
+  </div>
+<script src="script.js"></script>
+<script>
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
+</body>
+</html>
